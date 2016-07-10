@@ -10,8 +10,8 @@ help:
 
 # target: build - Bundle your application
 install:
-	npm install &&
-	git submodule update --init &&
-	cd relay-starter-kit &&
-	npm install &&
+	npm install && \
+	git submodule update --init && \
+	cd relay-starter-kit && \
+	npm install && \
 	cd ..
