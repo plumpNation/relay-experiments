@@ -1,0 +1,22 @@
+{
+  "name": "relay-experiments",
+  "version": "1.0.0",
+  "description": "A quick look into relay to see if it's all it's cracked up to be",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel --plugins transform-es2015-modules-commonjs src/ -d build",
+    "postinstall": "npm run build"
+  },
+  "author": "plumpnation",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.14.0",
+    "express-graphql": "^0.5.3",
+    "graphql": "^0.6.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.10.1",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.10.3"
+  }
+}
