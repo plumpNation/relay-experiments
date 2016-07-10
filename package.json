@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel --plugins transform-es2015-modules-commonjs src/ -d build",
-    "postinstall": "npm run build"
+    "build": "babel --plugins transform-es2015-modules-commonjs src/ -d build"
   },
   "author": "plumpnation",
   "license": "MIT",

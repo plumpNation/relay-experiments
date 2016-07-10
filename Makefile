@@ -1,4 +1,4 @@
-.PHONY : all help install
+.PHONY : all help install build
 
 all:
 	echo "Hello, nothing to do by default"
@@ -8,10 +8,15 @@ all:
 help:
 	egrep "^# target:" [Mm]akefile
 
-# target: build - Bundle your application
+# target: install - Install dependencies for project
 install:
 	npm install && \
 	git submodule update --init && \
 	cd relay-starter-kit && \
 	npm install && \
-	cd ..
+	cd .. && \
+	make build
+
+# target: build - Build src (outputs to build folder)
+build:
+	npm run build
